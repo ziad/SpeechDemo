@@ -13,6 +13,7 @@
 		273998321F56E0DB000F41BA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273998301F56E0DB000F41BA /* Main.storyboard */; };
 		273998341F56E0DB000F41BA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 273998331F56E0DB000F41BA /* Assets.xcassets */; };
 		273998371F56E0DB000F41BA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 273998351F56E0DB000F41BA /* LaunchScreen.storyboard */; };
+		273998401F56E114000F41BA /* Speech.m in Sources */ = {isa = PBXBuildFile; fileRef = 2739983F1F56E114000F41BA /* Speech.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		273998331F56E0DB000F41BA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		273998361F56E0DB000F41BA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		273998381F56E0DB000F41BA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2739983E1F56E114000F41BA /* Speech.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Speech.h; sourceTree = "<group>"; };
+		2739983F1F56E114000F41BA /* Speech.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Speech.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +61,8 @@
 		273998261F56E0DB000F41BA /* SpeechDemo */ = {
 			isa = PBXGroup;
 			children = (
+				2739983E1F56E114000F41BA /* Speech.h */,
+				2739983F1F56E114000F41BA /* Speech.m */,
 				2739982A1F56E0DB000F41BA /* AppDelegate.h */,
 				2739982B1F56E0DB000F41BA /* AppDelegate.m */,
 				2739982D1F56E0DB000F41BA /* ViewController.h */,
@@ -154,6 +159,7 @@
 				2739982F1F56E0DB000F41BA /* ViewController.m in Sources */,
 				2739982C1F56E0DB000F41BA /* AppDelegate.m in Sources */,
 				273998291F56E0DB000F41BA /* main.m in Sources */,
+				273998401F56E114000F41BA /* Speech.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -273,11 +279,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_ACTIVITY_MODE = "";
+				"DEBUG_ACTIVITY_MODE[sdk=*]" = disable;
 				DEVELOPMENT_TEAM = 5PK9D845XM;
 				INFOPLIST_FILE = SpeechDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apiron.SpeechDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -285,11 +294,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_ACTIVITY_MODE = "";
 				DEVELOPMENT_TEAM = 5PK9D845XM;
 				INFOPLIST_FILE = SpeechDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.apiron.SpeechDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
